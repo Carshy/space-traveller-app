@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Navigation.css';
-import companyLogo from '../images/companyLogo.PNG';
+import { NavLink } from 'react-router-dom';
+import './Header.css';
+import companyLogo from './companyLogo.PNG';
 
 function Navigation() {
   return (
@@ -12,19 +12,19 @@ function Navigation() {
         </a>
         <ul className="nav-group">
           <li>
-            <Link to="/" className="nav-item">
+            <NavLink to="/" className="nav-item active">
               Rockets
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/missions" className="nav-item">
+            <NavLink to="/missions" className="nav-item">
               Missions
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/profiles" className="nav-item">
+            <NavLink to="/profiles" className="nav-item">
               My Profile
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
