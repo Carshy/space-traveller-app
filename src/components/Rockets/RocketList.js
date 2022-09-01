@@ -1,19 +1,31 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Rockets from './Rockets';
 import { getRocketInfoFromApi } from '../../redux/rockets/rocket';
 
 function RocketList() {
-  // const rockets = useSelector((state) => state.rockets);
+  const rockets = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (document.querySelector('.roch').children.length === 0) dispatch(getRocketInfoFromApi());
-  }, []);
+    dispatch(getRocketInfoFromApi());
+  }, [dispatch]);
 
   return (
     <div>
-      <Rockets />
+      {
+        rockets.map((rocket) => (
+          <Rockets
+            key={rocket.id}
+            id={rocket.id}
+            rocket={rocket}
+            image={rocket.image[0]}
+            name={rocket.name}
+            description={rocket.description}
+            reserved={rocket.reserved}
+          />
+        ))
+      }
     </div>
   );
 }

@@ -3,27 +3,34 @@
 const FETCH_ROCKETS = 'spaceTraveller/api/FETCH_ROCKETS';
 const RESERVE_ROCKET = 'spaceTraveller/api/RESERVE_ROCKET';
 const CANCEL_RESERVATION = 'spaceTraveller/api/CANCEL_RESERVATION';
-const ADD_ROCKET_NAME = 'spaceTraveller/api/ADD_ROCKET_NAME';
 
 // api base URL
 const apiBaseUrl = 'https://api.spacexdata.com/v3/rockets';
+
+const getData = async (url) => {
+  try {
+    const response = await fetch(url);
+    return response.json();
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
+
+const fetchRockets = () => getData(apiBaseUrl);
 
 // Setting the Initial State
 const rocketArray = [];
 
 // Exporting Action creators
-export const getRocketInfoFromApi = () => (dispatch) => fetch(apiBaseUrl)
-  .then((res) => res.json())
-  .then((data) => {
-    const rockets = data.map((rocket) => ({
-      id: rocket.id,
-      name: rocket.rocket_name,
-      description: rocket.description,
-      image: rocket.flickr_images[0],
-      reserved: false,
-    }));
-    dispatch({ type: FETCH_ROCKETS, payLoad: rockets });
-  }).catch(() => {});
+export const getRocketInfoFromApi = () => async (dispatch) => {
+  try {
+    const data = await fetchRockets();
+
+    dispatch({ type: FETCH_ROCKETS, payload: data });
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
 
 export const reserveRocket = (payload) => (
   {
@@ -43,14 +50,24 @@ export const cancelReservation = (payload) => (
 const rocketReducer = (state = rocketArray, action) => {
   switch (action.type) {
     case FETCH_ROCKETS:
-      return [
-        ...action.payLoad,
-      ];
+      const filteredData = action.payload.map((rocket) => {
+        const {
+          id, rocket_name: name, rocket_type: type, flickr_images: image, description,
+        } = rocket;
+        return {
+          id, name, type, image, description,
+        };
+      });
+      return [...state, ...filteredData];
 
-    case ADD_ROCKET_NAME:
-      return [
-        ...state,
-      ];
+    case RESERVE_ROCKET:
+    case CANCEL_RESERVATION:
+      return state.map((rocket) => {
+        if (rocket.id !== parseInt(action.payload, 10)) {
+          return rocket;
+        }
+        return { ...rocket, reserved: !rocket.reserved };
+      });
     default:
       return state;
   }
