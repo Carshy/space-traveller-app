@@ -1,38 +1,39 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Button from './RocketsButton';
-import './Rockets.css';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Rocket from './Rocket';
+import { getRocketInfoFromApi } from '../../redux/rockets/rocket';
 
-function Rockets({
-  id, image, name, description, reserved,
-}) {
+function Rockets() {
+  // get rockets data from the store
+  const rockets = useSelector((state) => state.rocketReducer);
+  const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(getRocketInfoFromApi());
+  // }, []);
+
+  useEffect(() => {
+    if (!rockets.length) {
+      dispatch(getRocketInfoFromApi());
+    }
+  }, []);
+
   return (
-    <div className="rockets-section">
-      <div className="rocket-image">
-        <img src={image} alt={name} />
-      </div>
-      <div className="rocket-information">
-        <h2 className="title">{name}</h2>
-        <p>
-          {
-            reserved
-              ? <span className="badge">Reserved</span>
-              : ''
-          }
-          {description}
-        </p>
-        <Button id={id} reserved={reserved} />
-      </div>
+    <div>
+      {
+        rockets.map((rocket) => (
+          <Rocket
+            key={rocket.id}
+            id={rocket.id}
+            image={rocket.image[0]}
+            name={rocket.name}
+            description={rocket.description}
+            reserved={rocket.reserved}
+          />
+        ))
+      }
     </div>
   );
 }
-
-Rockets.propTypes = {
-  id: PropTypes.number,
-  image: PropTypes.string,
-  name: PropTypes.string,
-  description: PropTypes.string,
-  reserved: PropTypes.bool,
-}.isRequired;
 
 export default Rockets;

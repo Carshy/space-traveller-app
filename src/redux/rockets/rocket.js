@@ -1,8 +1,8 @@
 /* eslint-disable no-case-declarations */
 // defining action types to fetch rocket data
-const FETCH_ROCKETS = 'spaceTraveller/api/FETCH_ROCKETS';
-const RESERVE_ROCKET = 'spaceTraveller/api/RESERVE_ROCKET';
-const CANCEL_RESERVATION = 'spaceTraveller/api/CANCEL_RESERVATION';
+const FETCH_ROCKETS = 'space-traveller-app/rockets/FETCH_ROCKETS';
+const RESERVE_ROCKET = 'space-traveller-app/rockets/RESERVE_ROCKET';
+const CANCEL_RESERVATION = 'space-traveller-app/rockets/CANCEL_RESERVATION';
 
 // api base URL
 const apiBaseUrl = 'https://api.spacexdata.com/v3/rockets';
