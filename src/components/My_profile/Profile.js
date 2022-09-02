@@ -5,7 +5,7 @@ import { PopulateMissionProfile } from '../../redux/mission/mission';
 
 const Profile = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missionReducer);
+  const missions = useSelector((state) => state.missions);
 
   useEffect(() => {
     dispatch(PopulateMissionProfile());

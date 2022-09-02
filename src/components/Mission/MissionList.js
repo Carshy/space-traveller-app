@@ -6,7 +6,7 @@ import './mission.css';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missionReducer, shallowEqual);
+  const missions = useSelector((state) => state.missions, shallowEqual);
   useEffect(() => {
     if (missions.length === 0) { dispatch(LoadMissions()); }
   }, []);

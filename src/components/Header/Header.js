@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import companyLogo from './companyLogo.PNG';
+import planetLogo from './planetLogo.png';
 
 function Navigation() {
   return (
     <div>
       <nav className="navigation-section">
         <a className="nav-link" href="/">
-          <img src={companyLogo} alt="travellers" />
+          <img className="rocket-logo" src={planetLogo} alt="planet logo" />
+          <span className="text-logo">Space Travelers&apos; Hub</span>
         </a>
         <ul className="nav-group">
           <li>

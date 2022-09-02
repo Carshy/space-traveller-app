@@ -1,0 +1,54 @@
+.rockets-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 24px;
+  margin-left: 4%;
+}
+
+.rocket-image img {
+  width: 16rem;
+  height: 12rem;
+}
+
+.rocket-button {
+  padding: 8px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.rocket-description {
+  width: 91%;
+  line-height: 1.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.badge {
+  background-color: #31a2b8;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 0.58rem;
+  padding: 1px 3px;
+}
+
+.reserved {
+  padding: 0.5rem;
+  color: #b2beb5;
+  border: 1px solid #b2beb5;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.not-reserved {
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #1782fc;
+  background-color: #1083fd;
+  cursor: pointer;
+}
