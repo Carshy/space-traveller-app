@@ -2,6 +2,14 @@
 
 # Space Travelers Hub
 
+The Space Travelers' Hub is a web application that showcases Rockets, Missions, and the My Profile section. The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking. The Missions section displays a list of current missions along with their brief description and participation status, a button that allows users to join the selected mission or leave the mission the user joined earlier. The My Profile section displays all reserved rockets and space missions.
+
+The current project is part of the Microverse curriculum module 3 block 4. The main objective is to understand how create a React app, use components, hooks, state, redux, and creating professional documentation for development.
+
+## Our team comprise of two members who worked on this project:
+
+* Collins Musoko
+* Kidist
 
 ## Built With
 
@@ -11,6 +19,7 @@
  
  ## Live Demo
 
+Coming soon
  
 ## Getting Started
 
@@ -27,16 +36,18 @@ Any kind of browser and code editor.
     5. Type npm start in your terminal, this will open the project in your browser
 
 # Author 1
+👤 **Kidist**
 
 - GitHub: [@Ney2](https://github.com/Ney2)
 - Twitter: [@KidistGuta](https://twitter.com/GutaKidist)
 - LinkedIn: [@KidistDinku](https://www.linkedin.com/in/kidist-guta-014025183/)
 
 # Author 2
+👤 **Collins Musoko**
 
-- GitHub: 
-- Twitter: 
-- LinkedIn: 
+- GitHub: [@Github](https://github.com/Carshy)
+- Twitter: [@Twitter](https://twitter.com/CarshyCollins)
+- Linkedin: [Linkedin](https://www.linkedin.com/in/collins-musoko-864881120/) 
 # 🤝 Contributing
 Contributions, [issues](https://github.com/Carshy/space-traveller-app/issues), and feature requests are welcome!
 
