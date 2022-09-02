@@ -2,13 +2,14 @@
   display: flex;
   justify-content: left;
   align-items: center;
+  font-size: 1.1rem;
   gap: 24px;
   margin-left: 4%;
 }
 
 .rocket-image img {
-  width: 200px;
-  height: 160px;
+  width: 16rem;
+  height: 12rem;
 }
 
 .rocket-button {
@@ -21,8 +22,9 @@
 }
 
 .rocket-description {
-  width: 70%;
-  line-height: 1.3rem;
+  width: 91%;
+  line-height: 1.4rem;
+  margin-bottom: 0.9rem;
 }
 
 .badge {
@@ -35,18 +37,18 @@
 
 .reserved {
   padding: 0.5rem;
-  color: gray;
-  background-color: #fff;
-  border-radius: 4px;
-  border: 1px solid gray;
+  color: #b2beb5;
+  border: 1px solid #b2beb5;
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 6px;
 }
 
 .not-reserved {
   padding: 0.5rem;
   color: #fff;
-  background-color: #1083fd;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid #1782fc;
+  background-color: #1083fd;
   cursor: pointer;
 }

@@ -4,10 +4,9 @@
   align-items: center;
   gap: 44px;
   width: 100%;
-  height: 80px;
+  height: 8rem;
   box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
   margin-bottom: 3%;
-  background-color: #fff;
 }
 
 .nav-group {
@@ -18,16 +17,28 @@
 }
 
 .nav-item {
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #45a3ff;
   text-decoration: none;
 }
 
 .nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: #000;
   font-weight: bold;
-  font-size: larger;
   text-decoration: none;
+  margin-left: 4%;
+}
+
+.rocket-logo {
+  width: 6.2rem;
+  height: auto
+}
+
+.text-logo {
+  font-size: 2rem;
 }
 
 .nav-item:focus {
@@ -35,6 +46,3 @@
   text-decoration: underline;
 }
 
-.nav-link {
-  margin-left: 4%;
-}

@@ -13,7 +13,7 @@ function Rocket({
           <img src={image} alt={name} />
         </div>
         <div className="rocket-information">
-          <h2 className="title">{name}</h2>
+          <h1 className="title">{name}</h1>
           <p className="rocket-description">
             {
             reserved
