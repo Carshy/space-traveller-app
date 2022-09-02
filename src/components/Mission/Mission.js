@@ -1,11 +1,23 @@
 import React from 'react';
+import Proptypes from 'proptypes';
 
-function Missions() {
-  return (
-    <div>
-      <h1>Kidist is on Mission to Space</h1>
-    </div>
-  );
-}
+const MissionPage = ({ name, description, id }) => (
+  <div className="mission-table">
+    <h2>{name}</h2>
+    <p className="mission-description">
+      {description}
+    </p>
+    <p className="mission-status member">
+      Active member
+    </p>
+    <button type="button" id={id} className="mission-button join"> Join mission</button>
+  </div>
+);
 
-export default Missions;
+MissionPage.propTypes = {
+  name: Proptypes.string.isRequired,
+  description: Proptypes.string.isRequired,
+  id: Proptypes.string.isRequired,
+};
+
+export default MissionPage;

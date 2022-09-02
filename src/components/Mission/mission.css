@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+}
+
+.mission-section {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  border: 1px solid #aaa;
+}
+
+.mission-table,
+.header-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 70% 10% 10%;
+  text-align: left;
+}
+
+.mission-table > * {
+  border-top: 1px solid #aaa;
+  padding: 10px 10px;
+}
