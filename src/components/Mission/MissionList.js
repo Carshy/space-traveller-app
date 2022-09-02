@@ -5,10 +5,10 @@ import MissionPage from './Mission';
 import './mission.css';
 
 const Missions = () => {
-  const missions = useSelector((state) => state.missionReducer, shallowEqual);
   const dispatch = useDispatch();
+  const missions = useSelector((state) => state.missionReducer, shallowEqual);
   useEffect(() => {
-    dispatch(LoadMissions());
+    if (missions.length === 0) { dispatch(LoadMissions()); }
   }, []);
 
   return (
@@ -19,16 +19,17 @@ const Missions = () => {
         <p className="status">Status</p>
         <p className="join">Join</p>
       </div>
-      <div className="mission-container">
+      <ul className="mission-container>">
         { missions.map((mission) => (
           <MissionPage
             key={mission.mission_id}
             name={mission.mission_name}
             description={mission.description}
             id={mission.mission_id}
+            status={mission.reserved}
           />
         ))}
-      </div>
+      </ul>
     </section>
   );
 };
