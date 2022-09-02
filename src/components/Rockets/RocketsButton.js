@@ -21,8 +21,8 @@ function Button({ id, reserved }) {
     <>
       {
         reserved
-          ? <button id={id} type="button" className="rocket-button" onClick={handleClick}>Cancel Reservation</button>
-          : <button id={id} type="button" className="rocket-button" onClick={handleClick}>Reserve Rocket</button>
+          ? <button id={id} type="button" className="reserved" onClick={handleClick}>Cancel Reservation</button>
+          : <button id={id} type="button" className="not-reserved" onClick={handleClick}>Reserve Rocket</button>
       }
     </>
   );

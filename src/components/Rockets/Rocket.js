@@ -7,21 +7,23 @@ function Rocket({
   id, image, name, description, reserved,
 }) {
   return (
-    <div className="rockets-section">
-      <div className="rocket-image">
-        <img src={image} alt={name} />
-      </div>
-      <div className="rocket-information">
-        <h2 className="title">{name}</h2>
-        <p>
-          {
+    <div>
+      <div className="rockets-section">
+        <div className="rocket-image">
+          <img src={image} alt={name} />
+        </div>
+        <div className="rocket-information">
+          <h2 className="title">{name}</h2>
+          <p className="rocket-description">
+            {
             reserved
               ? <span className="badge">Reserved</span>
               : ''
           }
-          {description}
-        </p>
-        <Button id={id} reserved={reserved} />
+            {description}
+          </p>
+          <Button id={id} reserved={reserved} />
+        </div>
       </div>
     </div>
   );
