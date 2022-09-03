@@ -3,6 +3,7 @@
 const FETCH_ROCKETS = 'space-traveller-app/rockets/FETCH_ROCKETS';
 const RESERVE_ROCKET = 'space-traveller-app/rockets/RESERVE_ROCKET';
 const CANCEL_RESERVATION = 'space-traveller-app/rockets/CANCEL_RESERVATION';
+const POPULATE_ROCKETS_PROFILE = 'spacetravellers/rockets/populateRocketsProfile';
 
 // api base URL
 const apiBaseUrl = 'https://api.spacexdata.com/v3/rockets';
@@ -46,6 +47,11 @@ export const cancelReservation = (payload) => (
   }
 );
 
+export const PopulateRocketsProfile = (id) => ({
+  type: POPULATE_ROCKETS_PROFILE,
+  payload: id,
+});
+
 // Rocket Reducer to modify state action
 const rocketReducer = (state = rocketArray, action) => {
   switch (action.type) {
@@ -68,6 +74,8 @@ const rocketReducer = (state = rocketArray, action) => {
         }
         return { ...rocket, reserved: !rocket.reserved };
       });
+    case POPULATE_ROCKETS_PROFILE:
+      return [...state];
     default:
       return state;
   }
