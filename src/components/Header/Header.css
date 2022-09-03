@@ -41,7 +41,6 @@
   font-size: 2rem;
 }
 
-.nav-item:focus {
-  color: #000;
+.active {
   text-decoration: underline;
 }

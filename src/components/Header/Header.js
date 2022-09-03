@@ -13,7 +13,7 @@ function Navigation() {
         </a>
         <ul className="nav-group">
           <li>
-            <NavLink to="/" className="nav-item active">
+            <NavLink to="/" className="nav-item">
               Rockets
             </NavLink>
           </li>

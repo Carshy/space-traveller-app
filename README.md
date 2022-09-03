@@ -58,4 +58,4 @@ Give a ⭐️ if you like this project!
 To microverse
 # 📝 License
 
-This project is [MIT](https://github.com/Carshy/space-traveller-app/blob/dev/LICENSE) licensed.
+This project is [MIT](https://github.com/Carshy/readme-template/blob/master/MIT.md) licensed.

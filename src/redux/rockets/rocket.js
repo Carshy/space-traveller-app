@@ -1,5 +1,3 @@
-/* eslint-disable no-case-declarations */
-// defining action types to fetch rocket data
 const FETCH_ROCKETS = 'space-traveller-app/rockets/FETCH_ROCKETS';
 const RESERVE_ROCKET = 'space-traveller-app/rockets/RESERVE_ROCKET';
 const CANCEL_RESERVATION = 'space-traveller-app/rockets/CANCEL_RESERVATION';
