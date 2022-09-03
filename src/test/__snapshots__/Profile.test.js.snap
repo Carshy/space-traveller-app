@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="myProfile"
+>
+  <section
+    className="my-comp"
+  >
+    <h2>
+      My Mission
+    </h2>
+    <ul
+      className="reserved-container"
+    />
+  </section>
+  <section
+    className="my-comp"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <ul
+      className="reserved-container"
+    />
+  </section>
+</div>
+`;

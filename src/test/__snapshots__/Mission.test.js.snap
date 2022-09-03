@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="mission-section"
+>
+  <div
+    className="header-container"
+  >
+    <p
+      className="mission"
+    >
+      Mission
+    </p>
+    <p
+      className="description"
+    >
+      Description
+    </p>
+    <p
+      className="status"
+    >
+      Status
+    </p>
+    <p
+      className="join"
+    >
+      Join
+    </p>
+  </div>
+  <ul
+    className="mission-container>"
+  />
+</section>
+`;
