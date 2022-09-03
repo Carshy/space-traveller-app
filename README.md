@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Space Travelers Hub
 
-## Available Scripts
+The Space Travelers' Hub is a web application that showcases Rockets, Missions, and the My Profile section. The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking. The Missions section displays a list of current missions along with their brief description and participation status, a button that allows users to join the selected mission or leave the mission the user joined earlier. The My Profile section displays all reserved rockets and space missions.
 
-In the project directory, you can run:
+The current project is part of the Microverse curriculum module 3 block 4. The main objective is to understand how create a React app, use components, hooks, state, redux, and creating professional documentation for development.
 
-### `npm start`
+## Our team comprise of two members who worked on this project:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Collins Musoko
+* Kidist
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built With
 
-### `npm test`
+- React
+- Redux
+- CSS
+ 
+ ## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Coming soon
+ 
+## Getting Started
 
-### `npm run build`
+To get a local copy up and running follow these simple example steps.
+### Prerequisites:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Any kind of browser and code editor.
+### Setup:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    1. Clone the repository(https://github.com/Carshy/space-traveller-app.git)
+    2. Then open the folder in your local environment using any code editor
+    3. Open terminal
+    4. Type npm install, this will install all the necessary dependencies
+    5. Type npm start in your terminal, this will open the project in your browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Author 1
+👤 **Kidist**
 
-### `npm run eject`
+- GitHub: [@Ney2](https://github.com/Ney2)
+- Twitter: [@KidistGuta](https://twitter.com/GutaKidist)
+- LinkedIn: [@KidistDinku](https://www.linkedin.com/in/kidist-guta-014025183/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Author 2
+👤 **Collins Musoko**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- GitHub: [@Github](https://github.com/Carshy)
+- Twitter: [@Twitter](https://twitter.com/CarshyCollins)
+- Linkedin: [Linkedin](https://www.linkedin.com/in/collins-musoko-864881120/) 
+# 🤝 Contributing
+Contributions, [issues](https://github.com/Carshy/space-traveller-app/issues), and feature requests are welcome!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Show your support
+Give a ⭐️ if you like this project!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Acknowledgments
+To microverse
+# 📝 License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](https://github.com/Carshy/readme-template/blob/master/MIT.md) licensed.
