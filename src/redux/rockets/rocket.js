@@ -56,14 +56,6 @@ export const PopulateRocketsProfile = (id) => ({
 const rocketReducer = (state = rocketArray, action) => {
   switch (action.type) {
     case FETCH_ROCKETS:
-      // const filteredData = action.payload.map((rocket) => {
-      //   const {
-      //     id, rocket_name: name, rocket_type: type, flickr_images: image, description,
-      //   } = rocket;
-      //   return {
-      //     id, name, type, image, description,
-      //   };
-      // });
       return action.payload;
 
     case RESERVE_ROCKET:

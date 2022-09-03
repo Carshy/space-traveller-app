@@ -1,7 +1,3 @@
-// import { createStore, combineReducers, applyMiddleware } from 'redux';
-// import thunk from 'redux-thunk';
-// import logger from 'redux-logger';
-
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 import thunk from 'redux-thunk';
@@ -17,12 +13,5 @@ const store = configureStore({
   reducer: rootReducer,
   middleware: [thunk],
 });
-
-// const MyMiddlewares = [thunk, logger];
-// const reducers = combineReducers({
-//   missionReducer,
-// });
-
-// const store = createStore(reducers, applyMiddleware(...MyMiddlewares));
 
 export default store;
