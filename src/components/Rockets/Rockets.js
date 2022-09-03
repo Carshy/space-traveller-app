@@ -21,8 +21,8 @@ function Rockets() {
           <Rocket
             key={rocket.id}
             id={rocket.id}
-            image={rocket.image[0]}
-            name={rocket.name}
+            image={rocket.flickr_images[0]}
+            name={rocket.rocket_name}
             description={rocket.description}
             reserved={rocket.reserved}
           />
