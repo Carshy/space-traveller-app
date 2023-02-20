@@ -1,7 +1,7 @@
-const FETCH_ROCKETS = 'space-traveller-app/rockets/FETCH_ROCKETS';
-const RESERVE_ROCKET = 'space-traveller-app/rockets/RESERVE_ROCKET';
-const CANCEL_RESERVATION = 'space-traveller-app/rockets/CANCEL_RESERVATION';
-const POPULATE_ROCKETS_PROFILE = 'spacetravellers/rockets/populateRocketsProfile';
+const FETCH_ROCKETS = 'FETCH_ROCKETS';
+const RESERVE_ROCKET = 'RESERVE_ROCKET';
+const CANCEL_RESERVATION = 'CANCEL_RESERVATION';
+const POPULATE_ROCKETS_PROFILE = 'POPULATE_ROCKETS_PROFILE';
 
 // api base URL
 const apiBaseUrl = 'https://api.spacexdata.com/v3/rockets';

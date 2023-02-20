@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Header.css';
+import './Header.scss';
 import planetLogo from './planetLogo.png';
 
 function Navigation() {
@@ -9,11 +9,16 @@ function Navigation() {
       <nav className="navigation-section">
         <a className="nav-link" href="/">
           <img className="rocket-logo" src={planetLogo} alt="planet logo" />
-          <span className="text-logo">Space Travelers&apos; Hub</span>
+          <span className="text-logo">Space Hub Shuttle</span>
         </a>
         <ul className="nav-group">
           <li>
             <NavLink to="/" className="nav-item">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/rockets" className="nav-item">
               Rockets
             </NavLink>
           </li>

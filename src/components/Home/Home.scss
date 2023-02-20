@@ -1,0 +1,67 @@
+.app__home-bg1 {
+  background-image: url("../../images/homebg1.png");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  .app__home-cover {
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 100vh;
+
+    div {
+      padding-top: 20rem;
+      margin-left: 5rem;
+
+      p {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 2.3;
+      }
+
+      h2 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      h6 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-top: 2rem;
+        border: 3px solid #8dc6ff;
+        padding: 0.8rem;
+        width: 15%;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+
+    .app__key {
+      text-align: center;
+      font-size: 3rem;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 900;
+      bottom: 0;
+      animation: MoveUpDown 4s linear infinite;
+    }
+
+    @keyframes MoveUpDown {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-100px);
+      }
+    }
+  }
+}
