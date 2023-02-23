@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './RocketsButton';
-import './Rockets.css';
+import './Rockets.scss';
 
 function Rocket({
   id, image, name, description, reserved,

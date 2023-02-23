@@ -1,10 +1,15 @@
 .rockets-section {
+  background-image: url("../../images/home7.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: left;
   align-items: center;
   font-size: 1.1rem;
   gap: 24px;
   margin-left: 4%;
+  color: #fff;
 }
 
 .rocket-image img {
