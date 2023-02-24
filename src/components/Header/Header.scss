@@ -11,10 +11,24 @@
 }
 
 .navbar.fixed {
-  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  // box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
   backdrop-filter: blur(189px);
-  // background-color: #000;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
+
+  .nav-link {
+    .text-logo {
+      color: #000;
+    }
+  }
+
+  ul {
+    li {
+      .nav-item {
+        color: #000;
+      }
+    }
+  }
 }
 
 .nav-group {

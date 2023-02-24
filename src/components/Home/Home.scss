@@ -7,8 +7,8 @@
   height: 100vh;
 
   .app__home-cover {
-    backdrop-filter: blur(2px);
-    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    // background: rgba(255, 255, 255, 0.1);
     width: 100%;
     height: 100vh;
 
@@ -107,13 +107,14 @@
 .app__home-bg2 {
   background-image: url("../../images/homebg6.jpg");
   width: 100%;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 
   .app__home-cover1 {
     backdrop-filter: blur(1px);
-    background: rgba(255, 255, 255, 0.1);
+    // background: rgba(255, 255, 255, 0.1);
     width: 100%;
     height: 100vh;
 
@@ -192,7 +193,7 @@
 }
 
 .app__home-bg3 {
-  background-image: url("../../images/launch2.jpg.crdownload");
+  background-image: url("../../images/launch22.jpg");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;

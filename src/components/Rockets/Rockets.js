@@ -15,14 +15,14 @@ function Rockets() {
   }, []);
 
   return (
-    <div>
+    <div className="app__rocket">
       {
         rockets.map((rocket) => (
           <Rocket
             key={rocket.id}
             id={rocket.id}
-            image={rocket.flickr_images[0]}
             name={rocket.rocket_name}
+            image={rocket.flickr_images[0]}
             description={rocket.description}
             reserved={rocket.reserved}
           />
