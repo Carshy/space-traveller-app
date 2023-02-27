@@ -6,6 +6,7 @@
   width: 100%;
   height: 100%;
 }
+
 .app__rockets-details {
   padding-top: 7rem;
   width: 100%;
@@ -24,16 +25,30 @@
       font-weight: 800;
       text-transform: uppercase;
     }
+
+    @media screen and (max-width: 850px) {
+      h1 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
   }
 
   .app__rocket-info {
     display: flex;
-    flex: 1;
-    border: 2px solid #fff;
-    padding: 2rem;
     justify-content: space-between;
     gap: 3rem;
-    border-radius: 10px;
+    width: 68rem;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    box-shadow: 10px 5px 5px rgba(227, 226, 226, 0.634);
+    backdrop-filter: blur(5px);
+
+    @media screen and (max-width: 850px) {
+      gap: 1rem;
+    }
 
     .rocket-information {
       p {
@@ -45,6 +60,20 @@
       img {
         width: 32rem;
         // height: 12rem;
+      }
+    }
+
+    @media screen and (max-width: 850px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 21rem;
+      box-shadow: none;
+
+      .rocket-image {
+        img {
+          width: 19rem;
+        }
       }
     }
   }
