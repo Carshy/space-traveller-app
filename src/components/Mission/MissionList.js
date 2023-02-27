@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import { LoadMissions } from '../../redux/mission/mission';
 import MissionPage from './Mission';
-import './mission.css';
+import './mission.scss';
 
 const Missions = () => {
   const dispatch = useDispatch();

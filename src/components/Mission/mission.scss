@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mission-section {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  border: 1px solid #aaa;
+  background-image: url('../../images/bg5.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 8rem;
+}
+
+.mission-table,
+.header-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 70% 10% 10%;
+  text-align: left;
+
+  @media screen and (max-width: 850px) {
+    grid-template-columns: 20% 45% 17% 18%;
+    font-size: 0.8rem;
+  }
+}
+
+.mission-table > * {
+  border-top: 1px solid #aaa;
+  padding: 10px 10px;
+
+  @media screen and (max-width: 850px) {
+    padding: 4px 4px;
+  }
+}
+
+.mission-description,
+.description {
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+
+.header-container > * {
+  padding: 5px 0 5px 10px;
+  border-top: 1px solid #aaa;
+
+  @media screen and (max-width: 850px) {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.join {
+  color: white;
+}
+
+.border {
+  padding-top: 40%;
+  padding-bottom: 40%;
+}
+
+.status,
+.border {
+  border-right: 1px solid #aaa;
+
+  @media screen and (max-width: 850px) {
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+}
+
+.mission-button {
+  background: white;
+  color: #aaa;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  width: 80%;
+  margin: auto;
+  height: 40px;
+  padding: 2px;
+  cursor: pointer;
+
+  @media screen and (max-width: 850px) {
+    width: 90%;
+  }
+}
+
+.leave {
+  color: red;
+  border: 1px solid red;
+}
+
+.mission-status {
+  background: #676666;
+  color: white;
+  border-radius: 4px;
+  width: 80%;
+  margin: auto;
+  padding: 0 0 2px 0;
+  text-align: center;
+}
+
+.member {
+  background: rgb(0, 156, 246);
+}
