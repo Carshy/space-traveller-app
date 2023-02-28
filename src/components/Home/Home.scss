@@ -13,7 +13,7 @@
     height: 100vh;
 
     div {
-      padding-top: 20rem;
+      padding-top: 17rem;
       margin-left: 5rem;
 
       p {
@@ -27,21 +27,20 @@
         color: #fff;
         text-transform: uppercase;
         font-size: 3.5rem;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1.2;
       }
 
       h6 {
         color: #fff;
         text-transform: uppercase;
-        font-size: 1rem;
-        margin-top: 2rem;
-        // margin-bottom: 3rem;
-        border: 3px solid #8dc6ff;
+        margin-top: 1rem;
+        border: 1px solid #fff;
         padding: 0.8rem;
-        width: 15%;
+        width: 20%;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        border-radius: 12px;
       }
 
       @media screen and (max-width: 850px) {
