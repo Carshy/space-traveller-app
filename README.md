@@ -19,7 +19,7 @@ The current project is part of the Microverse curriculum module 3 block 4. The m
  
  ## Live Demo
 
-Coming soon
+See live demo [Here](https://space-hub-shuttle.netlify.app/)
  
 ## Getting Started
 
