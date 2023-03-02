@@ -1,10 +1,12 @@
-/* eslint-disable arrow-body-style */
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 import { RxDoubleArrowDown } from 'react-icons/rx';
 import './Home.scss';
 
 const Home = () => {
+  const [counterOn, setCounterOn] = useState(false);
   return (
     <div>
       <div className="app__home-bg1">
@@ -24,6 +26,36 @@ const Home = () => {
           <h3 className="app__key"><RxDoubleArrowDown /></h3>
         </div>
       </div>
+
+      <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+        <div
+          className="app__counterup-home"
+        >
+          <div>
+            <h1>
+              {counterOn && <CountUp start={0} end={321} duration={2} delay={0} />}
+              +
+            </h1>
+            <p>TOTAL LAUNCHES</p>
+          </div>
+
+          <div>
+            <h1>
+              {counterOn && <CountUp start={0} end={205} duration={2} delay={0} />}
+              +
+            </h1>
+            <p>TOTAL LANDINGS</p>
+          </div>
+
+          <div>
+            <h1>
+              {counterOn && <CountUp start={0} end={187} duration={2} delay={0} />}
+              +
+            </h1>
+            <p>TOTAL REFLIGHTS</p>
+          </div>
+        </div>
+      </ScrollTrigger>
 
       <div className="app__home-bg2">
         <div className="app__home-cover1">

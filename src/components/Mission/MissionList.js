@@ -1,27 +1,21 @@
 /* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable no-confusing-arrow */
 import React, { useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 import { LoadMissions } from '../../redux/mission/mission';
 import MissionPage from './Mission';
 import './mission.scss';
 
 const Missions = () => {
+  const [counterOn, setCounterOn] = useState(false);
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions, shallowEqual);
+
   useEffect(() => {
     if (missions.length === 0) { dispatch(LoadMissions()); }
   }, []);
-
-  const [value, setValue] = useState(0);
-  const { ref, inView } = useInView({ threshold: 0.5 });
-  const controls = useAnimation();
-
-  if (inView) {
-    controls.start({ value: 10000, duration: 5, onUpdate: (value) => setValue(value) });
-  }
 
   return (
     <section className="mission-section">
@@ -36,9 +30,36 @@ const Missions = () => {
           -Elon Musk
         </p>
       </div>
-      <div ref={ref}>
-        <motion.h1 animate={controls}>{value.toFixed()}</motion.h1>
-      </div>
+      <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+        <div
+          className="app__counterup"
+        >
+          <div>
+            <h1>
+              {counterOn && <CountUp start={0} end={276} duration={2} delay={0} />}
+              +
+            </h1>
+            <p>TOTAL LAUNCHES</p>
+          </div>
+
+          <div>
+            <h1>
+              {counterOn && <CountUp start={0} end={195} duration={2} delay={0} />}
+              +
+            </h1>
+            <p>TOTAL LANDINGS</p>
+          </div>
+
+          <div>
+            <h1>
+              {counterOn && <CountUp start={0} end={167} duration={2} delay={0} />}
+              +
+            </h1>
+            <p>TOTAL REFLIGHTS</p>
+          </div>
+        </div>
+      </ScrollTrigger>
+
       <div className="header-container">
         <p className="mission">Mission</p>
         <p className="description">Description</p>

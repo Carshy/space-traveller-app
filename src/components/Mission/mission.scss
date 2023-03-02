@@ -9,7 +9,7 @@
   width: 100%;
   margin: auto;
   border: 1px solid #aaa;
-  background-image: url('../../images/bg5.jpeg');
+  background-image: url("../../images/bg5.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 .app__mission-header {
-  background: url('../../images/missionbg.png');
+  background: url("../../images/missionbg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -135,4 +135,32 @@
 
 .member {
   background: rgb(0, 156, 246);
+}
+
+.app__counterup {
+  width: 84%;
+  margin: auto;
+  background: #000;
+  color: #fff;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 90%;
+    margin: 0 auto;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
 }

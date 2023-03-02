@@ -311,3 +311,31 @@
     line-height: 2.2rem;
   }
 }
+
+.app__counterup-home {
+  width: 84%;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 90%;
+    margin: 0 auto;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
