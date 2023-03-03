@@ -17,11 +17,20 @@ const Home = () => {
           >
             <p>Recent launch</p>
             <h2>
-              INMASSRT 1-4 F3
+              MAKING HUMANITY
               <br />
-              MISSION
+              MULTIPLANETARY
             </h2>
-            <a href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank" rel="noreferrer"><h6>Mission launch</h6></a>
+            <p className="home-desc">
+              Building on the achievements of Falcon 9 and Falcon Heavy,
+              <br />
+              We are working on next generation of fully reusable launch
+              <br />
+              vehicles capable of carrying humans to Mars and
+              other destinations in the solar system.
+              <br />
+            </p>
+            <a href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank" rel="noreferrer"><p className="home-link">Mission launch</p></a>
           </motion.div>
           <h3 className="app__key"><RxDoubleArrowDown /></h3>
         </div>
@@ -72,7 +81,7 @@ const Home = () => {
               <br />
               EXPLORATION
             </h2>
-            <a href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank" rel="noreferrer"><h6>LEARN MORE</h6></a>
+            <a href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank" rel="noreferrer"><p className="home-link">LEARN MORE</p></a>
           </motion.div>
           <h3 className="app__key"><RxDoubleArrowDown /></h3>
         </div>
@@ -91,7 +100,7 @@ const Home = () => {
               <br />
               FOR EXPLORATION
             </h2>
-            <a href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank" rel="noreferrer"><h6>LEARN MORE</h6></a>
+            <a href="https://www.youtube.com/watch?v=OnoNITE-CLc" target="_blank" rel="noreferrer"><p className="home-link">LEARN MORE</p></a>
           </motion.div>
           <h3 className="app__key"><RxDoubleArrowDown /></h3>
         </div>
