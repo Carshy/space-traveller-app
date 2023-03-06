@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 import { RxDoubleArrowDown } from 'react-icons/rx';
+import { FaFacebookF, FaTwitter } from 'react-icons/fa';
+import { AiOutlineGooglePlus } from 'react-icons/ai';
 import './Home.scss';
 
 const Home = () => {
@@ -107,10 +109,68 @@ const Home = () => {
       </div>
 
       <div className="app__footer">
-        <p>Space Hub Shuttle Copyright ©2023</p>
-        <a href="https://www.linkedin.com/in/collins-musoko/" target="_blank" rel="noreferrer"><h5>LinkedIn</h5></a>
-        <a href="https://github.com/Carshy" target="_blank" rel="noreferrer"><h5>Github</h5></a>
-        <p>App Created by ©Collins Musoko</p>
+        <div className="app__footer-upper">
+          <div className="app__footer-destinations">
+            <div className="moon">
+              <p>Moon</p>
+            </div>
+            <div className="mars">
+              <p>Mars</p>
+            </div>
+          </div>
+          <div className="app__footer-aboutterms">
+            <h5>About Us</h5>
+            <h5>FAQ</h5>
+            <h5>Privacy & Terms</h5>
+          </div>
+          <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+            <div
+              className="app__counterup-home"
+            >
+              <div>
+                <h1>
+                  {counterOn && <CountUp start={0} end={321} duration={2} delay={0} />}
+                  +
+                </h1>
+                <p>LAUNCHES</p>
+              </div>
+
+              <div>
+                <h1>
+                  {counterOn && <CountUp start={0} end={205} duration={2} delay={0} />}
+                  +
+                </h1>
+                <p>LANDINGS</p>
+              </div>
+
+              <div>
+                <h1>
+                  {counterOn && <CountUp start={0} end={187} duration={2} delay={0} />}
+                  +
+                </h1>
+                <p>REFLIGHTS</p>
+              </div>
+            </div>
+          </ScrollTrigger>
+        </div>
+        <hr />
+        <div className="app__footer-lower">
+          <p className="footer-lower-header">
+            S.Connect
+          </p>
+          <div>
+            <a href="https://www.facebook.com/collins.mussoko" className="footer-socials">
+              <FaFacebookF />
+            </a>
+            <a href="https://www.facebook.com/collins.mussoko" className="footer-socials">
+              <AiOutlineGooglePlus />
+            </a>
+            <a href="https://twitter.com/CarshyCollins" className="footer-socials">
+              <FaTwitter />
+            </a>
+          </div>
+          <p className="footer__copyright">App Created by ©Collins Musoko</p>
+        </div>
       </div>
     </div>
   );

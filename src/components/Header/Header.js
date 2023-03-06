@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import './Header.scss';
-import logo1 from '../../images/logo1.png';
+// import logo1 from '../../images/logo1.png';
 
 function Navigation() {
   const [fix, setFix] = useState(false);
@@ -22,7 +22,7 @@ function Navigation() {
     <div>
       <nav className={fix ? 'navbar fixed' : 'navbar'}>
         <a className="nav-link" href="/">
-          <img className="rocket-logo" src={logo1} alt="logo1" />
+          {/* <img className="rocket-logo" src={logo1} alt="logo1" /> */}
           <span className="text-logo">Space Hub Shuttle</span>
         </a>
         <ul className="nav-group">

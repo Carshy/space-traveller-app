@@ -319,14 +319,15 @@
 
 .app__footer {
   width: 100%;
-  height: 20vh;
+  height: 100%;
   background: #000;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   gap: 5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 
   a {
     color: #fff;
@@ -347,8 +348,7 @@
     height: 100%;
     gap: 0;
     font-size: 1.3rem;
-    padding: 1.4rem;
-    line-height: 2.2rem;
+    // padding: 1.4rem;
   }
 }
 
@@ -378,4 +378,95 @@
       font-size: 2rem;
     }
   }
+}
+
+.app__footer-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+
+  @media screen and (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .app__footer-destinations {
+    margin-top: 2rem;
+    .moon {
+      margin-bottom: 2rem;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.5rem;
+      width: 20rem;
+      border-radius: 8px;
+
+      p {
+        font-size: 1rem;
+        // border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    .mars {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.5rem;
+      border-radius: 8px;
+      p {
+        font-size: 1rem;
+        // border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  .app__footer-aboutterms {
+    line-height: 2rem;
+  }
+
+  .app__counterup-home {
+    div {
+      background: #67A01C;
+      padding: 1.8rem;
+      border-radius: 50%;
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media screen and (max-width: 850px) {
+      div {
+        display: none;
+      }
+    }
+  }
+}
+
+.app__footer-lower {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 850px) {
+    margin-left: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  div {
+    a {
+      margin-right: 2rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+hr {
+  border: 1px solid #fff;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  font-size: 0.8rem !important;
 }
