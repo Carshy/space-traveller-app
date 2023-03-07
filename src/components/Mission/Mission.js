@@ -2,7 +2,7 @@ import React from 'react';
 import Proptypes from 'proptypes';
 import { useDispatch } from 'react-redux';
 import { JoinMissions, LeaveMission } from '../../redux/mission/mission';
-import './mission.css';
+import './mission.scss';
 
 const MissionPage = ({
   name, description, id, status,

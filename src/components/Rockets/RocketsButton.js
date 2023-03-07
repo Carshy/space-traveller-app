@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveRocket, cancelReservation } from '../../redux/rockets/rocket';
-import './Rockets.css';
+import './Rockets.scss';
 
 function Button({ id, reserved }) {
   const dispatch = useDispatch();
